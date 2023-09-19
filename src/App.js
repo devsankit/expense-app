@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
+import './App.css'
+
 const DUMMY_EXPENSES = [
   {
     id: 'e1',
@@ -43,9 +45,9 @@ const App = () => {
 
   return (
     <div>
+      <h1 data-testid="1" className='App'>Expense Tracker App</h1>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-      <a data-testid="1"></a>
     </div>
   );
 };
