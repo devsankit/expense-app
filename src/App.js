@@ -45,6 +45,7 @@ const App = () => {
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses data-testid="1" items={expenses} />
+      <a data-testid="1" href="https://reactjs.org"></a>
     </div>
   );
 };
