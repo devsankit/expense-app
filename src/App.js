@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <>
-      <h1 data-testid="App" className='App'>Expense Tracker App</h1>
+      <div data-testid="App" className='App'>Expense Tracker App</div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </>
