@@ -3,7 +3,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkTag = screen.getAllByTestId('1')
+  const linkTag = screen.getAllByTestId("new-expense")
   // const linkElement = screen.getByText(<Expenses items={expenses} />/i);
   expect(linkTag).toBeInTheDocument();
 });
